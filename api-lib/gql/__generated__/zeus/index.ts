@@ -12616,7 +12616,6 @@ export type ValueTypes = {
   /** Coordinape user accounts that can belong to one or many circles via the relationship to the users table */
   ['profiles']: AliasType<{
     address?: boolean | `@${string}`;
-    ann_power?: boolean | `@${string}`;
     avatar?: boolean | `@${string}`;
     background?: boolean | `@${string}`;
     bio?: boolean | `@${string}`;
@@ -12905,7 +12904,6 @@ export type ValueTypes = {
     _not?: ValueTypes['profiles_bool_exp'] | undefined | null;
     _or?: Array<ValueTypes['profiles_bool_exp']> | undefined | null;
     address?: ValueTypes['String_comparison_exp'] | undefined | null;
-    ann_power?: ValueTypes['Boolean_comparison_exp'] | undefined | null;
     avatar?: ValueTypes['String_comparison_exp'] | undefined | null;
     background?: ValueTypes['String_comparison_exp'] | undefined | null;
     bio?: ValueTypes['String_comparison_exp'] | undefined | null;
@@ -12939,7 +12937,6 @@ export type ValueTypes = {
   /** input type for inserting data into table "profiles" */
   ['profiles_insert_input']: {
     address?: string | undefined | null;
-    ann_power?: boolean | undefined | null;
     avatar?: string | undefined | null;
     background?: string | undefined | null;
     bio?: string | undefined | null;
@@ -13030,7 +13027,6 @@ export type ValueTypes = {
   /** Ordering options when selecting data from "profiles". */
   ['profiles_order_by']: {
     address?: ValueTypes['order_by'] | undefined | null;
-    ann_power?: ValueTypes['order_by'] | undefined | null;
     avatar?: ValueTypes['order_by'] | undefined | null;
     background?: ValueTypes['order_by'] | undefined | null;
     bio?: ValueTypes['order_by'] | undefined | null;
@@ -13073,7 +13069,6 @@ export type ValueTypes = {
   /** input type for updating data in table "profiles" */
   ['profiles_set_input']: {
     address?: string | undefined | null;
-    ann_power?: boolean | undefined | null;
     avatar?: string | undefined | null;
     background?: string | undefined | null;
     bio?: string | undefined | null;
@@ -13115,7 +13110,6 @@ export type ValueTypes = {
   /** Initial value of the column from where the streaming should start */
   ['profiles_stream_cursor_value_input']: {
     address?: string | undefined | null;
-    ann_power?: boolean | undefined | null;
     avatar?: string | undefined | null;
     background?: string | undefined | null;
     bio?: string | undefined | null;
@@ -25544,7 +25538,6 @@ export type ModelTypes = {
   /** Coordinape user accounts that can belong to one or many circles via the relationship to the users table */
   ['profiles']: {
     address: string;
-    ann_power: boolean;
     avatar?: string | undefined;
     background?: string | undefined;
     bio?: string | undefined;
@@ -36709,7 +36702,6 @@ export type GraphQLTypes = {
   ['profiles']: {
     __typename: 'profiles';
     address: string;
-    ann_power: boolean;
     avatar?: string | undefined;
     background?: string | undefined;
     bio?: string | undefined;
@@ -36778,7 +36770,6 @@ export type GraphQLTypes = {
     _not?: GraphQLTypes['profiles_bool_exp'] | undefined;
     _or?: Array<GraphQLTypes['profiles_bool_exp']> | undefined;
     address?: GraphQLTypes['String_comparison_exp'] | undefined;
-    ann_power?: GraphQLTypes['Boolean_comparison_exp'] | undefined;
     avatar?: GraphQLTypes['String_comparison_exp'] | undefined;
     background?: GraphQLTypes['String_comparison_exp'] | undefined;
     bio?: GraphQLTypes['String_comparison_exp'] | undefined;
@@ -36811,7 +36802,6 @@ export type GraphQLTypes = {
   /** input type for inserting data into table "profiles" */
   ['profiles_insert_input']: {
     address?: string | undefined;
-    ann_power?: boolean | undefined;
     avatar?: string | undefined;
     background?: string | undefined;
     bio?: string | undefined;
@@ -36900,7 +36890,6 @@ export type GraphQLTypes = {
   /** Ordering options when selecting data from "profiles". */
   ['profiles_order_by']: {
     address?: GraphQLTypes['order_by'] | undefined;
-    ann_power?: GraphQLTypes['order_by'] | undefined;
     avatar?: GraphQLTypes['order_by'] | undefined;
     background?: GraphQLTypes['order_by'] | undefined;
     bio?: GraphQLTypes['order_by'] | undefined;
@@ -36935,7 +36924,6 @@ export type GraphQLTypes = {
   /** input type for updating data in table "profiles" */
   ['profiles_set_input']: {
     address?: string | undefined;
-    ann_power?: boolean | undefined;
     avatar?: string | undefined;
     background?: string | undefined;
     bio?: string | undefined;
@@ -36977,7 +36965,6 @@ export type GraphQLTypes = {
   /** Initial value of the column from where the streaming should start */
   ['profiles_stream_cursor_value_input']: {
     address?: string | undefined;
-    ann_power?: boolean | undefined;
     avatar?: string | undefined;
     background?: string | undefined;
     bio?: string | undefined;
@@ -40971,7 +40958,6 @@ export const enum profiles_constraint {
 /** select columns of table "profiles" */
 export const enum profiles_select_column {
   address = 'address',
-  ann_power = 'ann_power',
   avatar = 'avatar',
   background = 'background',
   bio = 'bio',
@@ -40991,7 +40977,6 @@ export const enum profiles_select_column {
 /** update columns of table "profiles" */
 export const enum profiles_update_column {
   address = 'address',
-  ann_power = 'ann_power',
   avatar = 'avatar',
   background = 'background',
   bio = 'bio',
