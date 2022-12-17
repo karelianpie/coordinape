@@ -753,6 +753,9 @@ export type ValueTypes = {
   ['DeleteContributionInput']: {
     contribution_id: number;
   };
+  ['DeleteDiscordUserInput']: {
+    user_snowflake: string;
+  };
   ['DeleteEpochInput']: {
     circle_id: number;
     id: number;
@@ -8237,6 +8240,10 @@ export type ValueTypes = {
     ];
     deleteContribution?: [
       { payload: ValueTypes['DeleteContributionInput'] },
+      ValueTypes['ConfirmationResponse']
+    ];
+    deleteDiscordUser?: [
+      { payload: ValueTypes['DeleteDiscordUserInput'] },
       ValueTypes['ConfirmationResponse']
     ];
     deleteEpoch?: [
@@ -20412,6 +20419,7 @@ export type ModelTypes = {
   ['CreateVaultInput']: GraphQLTypes['CreateVaultInput'];
   ['DeleteCircleInput']: GraphQLTypes['DeleteCircleInput'];
   ['DeleteContributionInput']: GraphQLTypes['DeleteContributionInput'];
+  ['DeleteDiscordUserInput']: GraphQLTypes['DeleteDiscordUserInput'];
   ['DeleteEpochInput']: GraphQLTypes['DeleteEpochInput'];
   ['DeleteEpochResponse']: {
     success: boolean;
@@ -23786,6 +23794,7 @@ export type ModelTypes = {
     createVaultTx?: GraphQLTypes['LogVaultTxResponse'] | undefined;
     deleteCircle?: GraphQLTypes['ConfirmationResponse'] | undefined;
     deleteContribution?: GraphQLTypes['ConfirmationResponse'] | undefined;
+    deleteDiscordUser?: GraphQLTypes['ConfirmationResponse'] | undefined;
     deleteEpoch?: GraphQLTypes['DeleteEpochResponse'] | undefined;
     deleteUser?: GraphQLTypes['ConfirmationResponse'] | undefined;
     /** delete data from the table: "burns" */
@@ -27677,6 +27686,9 @@ export type GraphQLTypes = {
   };
   ['DeleteContributionInput']: {
     contribution_id: number;
+  };
+  ['DeleteDiscordUserInput']: {
+    user_snowflake: string;
   };
   ['DeleteEpochInput']: {
     circle_id: number;
@@ -34128,6 +34140,7 @@ export type GraphQLTypes = {
     createVaultTx?: GraphQLTypes['LogVaultTxResponse'] | undefined;
     deleteCircle?: GraphQLTypes['ConfirmationResponse'] | undefined;
     deleteContribution?: GraphQLTypes['ConfirmationResponse'] | undefined;
+    deleteDiscordUser?: GraphQLTypes['ConfirmationResponse'] | undefined;
     deleteEpoch?: GraphQLTypes['DeleteEpochResponse'] | undefined;
     deleteUser?: GraphQLTypes['ConfirmationResponse'] | undefined;
     /** delete data from the table: "burns" */
