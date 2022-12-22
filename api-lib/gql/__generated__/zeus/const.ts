@@ -2879,7 +2879,7 @@ export const AllTypesProps: Record<string, any> = {
     locked_token_distribution_gifts: 'locked_token_distribution_gifts_bool_exp',
     profile: 'profiles_bool_exp',
     token_contract_address: 'String_comparison_exp',
-    token_decimals: 'String_comparison_exp',
+    token_decimals: 'Int_comparison_exp',
     token_symbol: 'String_comparison_exp',
     tx_hash: 'String_comparison_exp',
   },
@@ -5309,6 +5309,7 @@ export const AllTypesProps: Record<string, any> = {
     personal_access_tokens_by_pk: {
       id: 'bigint',
     },
+    price_per_share: {},
     profiles: {
       distinct_on: 'profiles_select_column',
       order_by: 'profiles_order_by',
@@ -9459,7 +9460,7 @@ export const ReturnTypes: Record<string, any> = {
       'locked_token_distribution_gifts_aggregate',
     profile: 'profiles',
     token_contract_address: 'String',
-    token_decimals: 'String',
+    token_decimals: 'Int',
     token_symbol: 'String',
     tx_hash: 'String',
   },
@@ -9486,6 +9487,7 @@ export const ReturnTypes: Record<string, any> = {
     epoch_id: 'Float',
     gift_amount: 'Float',
     id: 'Float',
+    token_decimals: 'Float',
   },
   locked_token_distributions_max_fields: {
     chain_id: 'Int',
@@ -9494,7 +9496,7 @@ export const ReturnTypes: Record<string, any> = {
     gift_amount: 'numeric',
     id: 'bigint',
     token_contract_address: 'String',
-    token_decimals: 'String',
+    token_decimals: 'Int',
     token_symbol: 'String',
     tx_hash: 'String',
   },
@@ -9505,7 +9507,7 @@ export const ReturnTypes: Record<string, any> = {
     gift_amount: 'numeric',
     id: 'bigint',
     token_contract_address: 'String',
-    token_decimals: 'String',
+    token_decimals: 'Int',
     token_symbol: 'String',
     tx_hash: 'String',
   },
@@ -9519,6 +9521,7 @@ export const ReturnTypes: Record<string, any> = {
     epoch_id: 'Float',
     gift_amount: 'Float',
     id: 'Float',
+    token_decimals: 'Float',
   },
   locked_token_distributions_stddev_pop_fields: {
     chain_id: 'Float',
@@ -9526,6 +9529,7 @@ export const ReturnTypes: Record<string, any> = {
     epoch_id: 'Float',
     gift_amount: 'Float',
     id: 'Float',
+    token_decimals: 'Float',
   },
   locked_token_distributions_stddev_samp_fields: {
     chain_id: 'Float',
@@ -9533,6 +9537,7 @@ export const ReturnTypes: Record<string, any> = {
     epoch_id: 'Float',
     gift_amount: 'Float',
     id: 'Float',
+    token_decimals: 'Float',
   },
   locked_token_distributions_sum_fields: {
     chain_id: 'Int',
@@ -9540,6 +9545,7 @@ export const ReturnTypes: Record<string, any> = {
     epoch_id: 'bigint',
     gift_amount: 'numeric',
     id: 'bigint',
+    token_decimals: 'Int',
   },
   locked_token_distributions_var_pop_fields: {
     chain_id: 'Float',
@@ -9547,6 +9553,7 @@ export const ReturnTypes: Record<string, any> = {
     epoch_id: 'Float',
     gift_amount: 'Float',
     id: 'Float',
+    token_decimals: 'Float',
   },
   locked_token_distributions_var_samp_fields: {
     chain_id: 'Float',
@@ -9554,6 +9561,7 @@ export const ReturnTypes: Record<string, any> = {
     epoch_id: 'Float',
     gift_amount: 'Float',
     id: 'Float',
+    token_decimals: 'Float',
   },
   locked_token_distributions_variance_fields: {
     chain_id: 'Float',
@@ -9561,6 +9569,7 @@ export const ReturnTypes: Record<string, any> = {
     epoch_id: 'Float',
     gift_amount: 'Float',
     id: 'Float',
+    token_decimals: 'Float',
   },
   member_epoch_pgives: {
     created_at: 'timestamptz',
@@ -10799,6 +10808,7 @@ export const ReturnTypes: Record<string, any> = {
     personal_access_tokens: 'personal_access_tokens',
     personal_access_tokens_aggregate: 'personal_access_tokens_aggregate',
     personal_access_tokens_by_pk: 'personal_access_tokens',
+    price_per_share: 'Float',
     profiles: 'profiles',
     profiles_aggregate: 'profiles_aggregate',
     profiles_by_pk: 'profiles',
@@ -11581,6 +11591,7 @@ export const ReturnTypes: Record<string, any> = {
     id: 'bigint',
     org_id: 'bigint',
     organization: 'organizations',
+    price_per_share: 'Float',
     profile: 'profiles',
     simple_token_address: 'String',
     symbol: 'String',
